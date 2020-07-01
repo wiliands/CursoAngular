@@ -1,0 +1,5 @@
+{
+  "title": "transloco pt-BR",
+  "dynamic": "transloco {{value}}",
+  "appName": "Aplicação CRUD"
+}
