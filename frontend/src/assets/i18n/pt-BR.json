@@ -1,5 +1,6 @@
 {
-  "title": "transloco pt-BR",
-  "dynamic": "transloco {{value}}",
-  "appName": "Aplicação CRUD"
+  "appName": "Aplicação CRUD",
+  "desenvolvido_por": "Desenvolvido por Wilian Domingues",
+  "home": "Ínicio",
+  "produto": "Produtos"
 }

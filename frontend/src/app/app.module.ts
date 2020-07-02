@@ -11,11 +11,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { translocoLoader } from './transloco.loader';
 import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/transloco';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { NavComponent } from './components/template/nav/nav.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,9 @@ import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/tran
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
-    TranslocoModule
+    MatSidenavModule,
+    MatListModule,
+    TranslocoModule,
   ],
   providers: [{
       provide: TRANSLOCO_CONFIG,
