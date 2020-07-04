@@ -15,14 +15,26 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { HomeComponent } from './views/home/home.component';
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { BlueIconDirective } from './directives/blue-icon.directive';
+import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    ProductCrudComponent,
+    BlueIconDirective,
+    ForDirective,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -33,12 +45,16 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatListModule,
     TranslocoModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [{
       provide: TRANSLOCO_CONFIG,
       useValue: {
         listenToLangChange: true,
+        availableLangs: ['en', 'es', 'pt-BR'],
         defaultLang: 'pt-BR',
+        reRenderOnLangChange: true,
         prodMode: environment.production
       } as TranslocoConfig
     },

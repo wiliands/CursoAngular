@@ -1,6 +1,19 @@
 {
-  "appName": "Aplicação CRUD",
-  "desenvolvido_por": "Desenvolvido por Wilian Domingues",
-  "home": "Ínicio",
-  "produto": "Produtos"
+  "header": {
+    "appName": "Aplicação CRUD"
+  },
+  "footer" : {
+    "desenvolvido_por": "Desenvolvido por Wilian Domingues"
+  },
+  "nav" : {
+    "home": "Ínicio",
+    "produto": "Produtos"
+  },
+  "home": {
+    "bemvindo": "Bem Vindo!",
+    "msg": "Cadastro de Produtos em Angular"
+  },
+  "produto": {
+    "novo": "Novo Produto"
+  }
 }
