@@ -14,6 +14,25 @@
     "msg": "Product Registration in Angular"
   },
   "produto": {
-    "novo": "New Product"
+    "novo": "New Product",
+    "atualizar": "Update Product",
+    "nome": "Name",
+    "preco": "Price ($)",
+    "id": "ID"
+  },
+  "button": {
+    "salvar": "Save",
+    "cancelar": "Cancel",
+    "excluir": "Delete"
+  },
+  "link": {
+    "editar": "Edit",
+    "excluir": "Delete"
+  },
+  "acoes": "Ações",
+  "msg": {
+    "salvar": "Product created!",
+    "atualizar": "Product updated!",
+    "excluir": "Product deleted!"
   }
 }

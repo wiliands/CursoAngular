@@ -1,3 +1,8 @@
-<button material-raised-button *transloco="let tr" (click)="navigateToProductCreate()">
+<button mat-raised-button
+        *transloco="let tr"
+        (click)="navigateToProductCreate()"
+        color="primary">
     {{ tr('produto.novo') }}
 </button>
+
+<app-product-read></app-product-read>

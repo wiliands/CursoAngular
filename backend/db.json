@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC Preta",
-      "price": 5.89
+      "price": "5.89"
     },
     {
       "id": 2,
@@ -24,6 +24,16 @@
       "name": "Geladeira",
       "price": 2000,
       "id": 5
+    },
+    {
+      "name": "Portafiltro",
+      "price": "2000",
+      "id": 6
+    },
+    {
+      "name": "Moedor",
+      "price": "20000",
+      "id": 7
     }
   ]
 }

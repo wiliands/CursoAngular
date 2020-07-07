@@ -1,5 +1,5 @@
 <mat-card *transloco="let tr">
-    <mat-card-title>{{ tr('produto.novo') }}</mat-card-title>
+    <mat-card-title>{{ tr('produto.atualizar') }}</mat-card-title>
     <form>
         <mat-form-field>
             <input name="name"
@@ -15,7 +15,7 @@
         </mat-form-field>
     </form>
     <button mat-raised-button
-            (click)="createProduct()"
+            (click)="updateProduct()"
             color="primary">
         {{ tr('button.salvar') }}
     </button>

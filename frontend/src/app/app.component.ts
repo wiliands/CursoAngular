@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {TranslocoService} from "@ngneat/transloco";
-import { language } from '../environments/languages';
+import { TranslocoService } from "@ngneat/transloco";
+import { CurrentLanguage } from '../environments/CurrentLanguages';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { language } from '../environments/languages';
 export class AppComponent {
 
   constructor(private transSrv: TranslocoService) {
-    this.transSrv.setActiveLang(language(navigator.language));
+    this.transSrv.setActiveLang(CurrentLanguage(navigator.language));
   }
 
 }

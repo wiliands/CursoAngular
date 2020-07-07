@@ -1,6 +1,6 @@
 import { languages } from './enum.languages';
 
-export function language(language: string) {
+export function CurrentLanguage(language: string) {
   if (language == languages.en) {
     return languages.en;
   }
