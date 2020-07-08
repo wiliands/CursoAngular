@@ -1,3 +1,5 @@
+import { HeaderService } from './header.service';
+import { TranslocoService } from '@ngneat/transloco';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translocoService: TranslocoService,
+    private headerService: HeaderService) { }
 
   ngOnInit(): void {
+  }
+
+  get title(): string {
+    return this.translocoService.translate(this.headerService.headerData.title);
+  }
+  
+  get icon(): string {
+    return this.headerService.headerData.icon
+  }
+  
+  get routeUrl(): string {
+    return this.headerService.headerData.routeUrl
   }
 
 }

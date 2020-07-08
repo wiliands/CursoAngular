@@ -1,1 +1,29 @@
-<p>product-delete works!</p>
+<mat-card *transloco="let tr">
+    <mat-card-title>{{ tr('produto.excluir') }}</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input name="name"
+                   matInput
+                   placeholder="{{ tr('produto.nome') }}"
+                   [value]="product.name"
+                   disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input name="price"
+                   matInput
+                   placeholder="{{ tr('produto.preco') }}"
+                   [value]="product.price"
+                   disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button
+            (click)="deleteProduct()"
+            color="primary">
+        {{ tr('button.excluir') }}
+    </button>
+    
+    <button mat-raised-button
+            (click)="cancel()">
+        {{ tr('button.cancelar') }}
+    </button>
+</mat-card>

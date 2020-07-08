@@ -14,8 +14,10 @@
     "msg": "Registro de producto en Angular"
   },
   "produto": {
+    "cadastro": "Registración del Producto",
     "novo": "Nuevo Producto",
     "atualizar": "Actualizando Producto",
+    "excluir": "Eliminando Producto",
     "nome": "Nombre",
     "preco": "Precio (MX)",
     "id": "ID"
@@ -23,7 +25,8 @@
   "button": {
     "salvar": "Nuevo",
     "cancelar": "Cancelar",
-    "excluir": "Excluir"
+    "excluir": "Excluir",
+    "alterar": "Alterar"
   },
   "link": {
     "editar": "Editar",

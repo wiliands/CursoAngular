@@ -14,8 +14,10 @@
     "msg": "Cadastro de Produtos em Angular"
   },
   "produto": {
+    "cadastro": "Cadastro de Produtos",
     "novo": "Novo Produto",
     "atualizar": "Atualizando Produto",
+    "excluir": "Excluindo Produto",
     "nome": "Nome",
     "preco": "Preço (R$)",
     "id": "ID"
@@ -23,7 +25,8 @@
   "button": {
     "salvar": "Salvar",
     "cancelar": "Cancelar",
-    "excluir": "Excluir"
+    "excluir": "Excluir",
+    "alterar": "Alterar"
   },
   "link": {
     "editar": "Editar",
